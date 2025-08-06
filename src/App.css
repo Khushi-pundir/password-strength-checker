@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+input[type="password"] {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+input[type="password"]:focus {
+  border-color: #7b2ff7;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(123, 47, 247, 0.2);
+}
+
+ul {
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.strength-bar {
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background: #eee;
+  overflow: hidden;
+}
+
+.strength-level {
+  height: 100%;
+  width: 0;
+  transition: width 0.4s ease;
+}
